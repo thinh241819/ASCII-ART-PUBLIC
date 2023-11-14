@@ -1,0 +1,28 @@
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .container {
+  width: 350px;
+  height: 600px;
+}
+
+.gallery .container .button-style {
+  margin-left: 60px;
+}
+
+.h1-style {
+  margin: auto;
+  text-align: center;
+  font-size: 60px;
+  color: pink;
+}
+/*# sourceMappingURL=ascii.css.map */

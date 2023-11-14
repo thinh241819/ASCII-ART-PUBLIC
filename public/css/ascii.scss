@@ -1,0 +1,21 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .container {
+        width: 350px;
+        height: 600px;
+
+        .button-style {
+            margin-left: 60px;
+        }
+    }
+}
+
+.h1-style {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    color: pink;
+}

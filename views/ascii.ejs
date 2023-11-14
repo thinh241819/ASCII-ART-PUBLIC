@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/ascii.css">
+    </head>
+    <body style=" background-color: navy; color: white;">
+        <h1 class="h1-style">Happy Birthday my Preciousssss <3</h1>
+        <div class="gallery">
+            <% for (var i = 0; i < tempArray.length; i++) { %>
+                <div class="container">
+                    <% for (var j = 0; j < tempArray[i].image.length; j++) { %>
+                        <pre style="line-height: 0px;font-size: 2.5px;">
+                            <%= tempArray[i].image[j] %>
+                        </pre>
+                     <% } %>
+                    <form class="form-style" action="/ascii/view/<%= tempArray[i].name %>" method="POST">
+                        <input type="hidden" name="ascii_image_id" value="<%= tempArray[i].name %>">
+                        <button class="button-style" type="submit">Click Me Click Me!</button>
+                    </form> 
+                </div>
+             <% } %>
+        </div>
+    </body>
+</html>

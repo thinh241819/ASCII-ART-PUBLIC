@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">
+        <h1 class="h1-style">Enter Your BirthDay</h1>
+        <form class="form-style" action="/" method="POST">
+          <label class="label-style" for="fname">
+            <% if(!wrong_password){ %> The Day an Angel was born <3 <% } else{
+            %> Wrong Birthday!!! <% } %> </label
+          ><br/>
+          <input
+            class="input-style"
+            type="text"
+            id="fname"
+            name="her_birthday"
+            value="mm-dd-yyyy"
+          /><br/>          
+          <button class="button-style" type="submit">Click Me Click Me!</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

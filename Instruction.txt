@@ -1,0 +1,29 @@
+1. Open a file and take picture
+https://stackoverflow.com/questions/15018372/how-to-take-partial-screenshot-with-selenium-webdriver-in-python
+
+2. Activate ENV - source env/bin/activate
+    Windows 10 - venv\Scripts\activate
+3. Create Environment - python3 -m venv env
+
+
+WINDOWS
+1. To run Scripts -  Set-ExecutionPolicy Unrestricted | Restricted
+
+
+
+
+NODEJS
+1. For my problem, I am trying to read the txt file line by line.
+2. In this case, readFile won't work. But read stream will work. 
+
+    const fileStream = fileSystem.createReadStream('out.txt');
+    const rl = readline.createInterface({
+        input: fileStream,
+        crlfDelay: Infinity
+    });
+
+    rl.on('line', function (line) {
+        console.log('Line from file:', line);
+    });
+
+>>
